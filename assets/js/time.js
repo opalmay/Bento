@@ -21,7 +21,7 @@ function displayClock() {
   ];
 
   // Get clock elements
-  var d = new Date();
+  var d = new Date() + (3*60*60*1000);
   var mm = monthNames[d.getMonth()];
   var dd = d.getDate();
   var min = (mins = ('0' + d.getMinutes()).slice(-2));
